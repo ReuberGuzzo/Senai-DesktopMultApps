@@ -28,106 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.lblAnoNascimento = new System.Windows.Forms.Label();
+            this.btnCategoria = new System.Windows.Forms.Button();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblInserirCategoria = new System.Windows.Forms.Label();
+            this.dtAnoNascimento = new System.Windows.Forms.DateTimePicker();
+            this.lblHoje = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "&Nome:";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(14, 16);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(43, 15);
+            this.lblNome.TabIndex = 0;
+            this.lblNome.Text = "&Nome:";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(386, 23);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNome.Location = new System.Drawing.Point(62, 13);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(386, 23);
+            this.txtNome.TabIndex = 1;
             // 
-            // label2
+            // lblAnoNascimento
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Ano Nascimento";
+            this.lblAnoNascimento.AutoSize = true;
+            this.lblAnoNascimento.Location = new System.Drawing.Point(12, 60);
+            this.lblAnoNascimento.Name = "lblAnoNascimento";
+            this.lblAnoNascimento.Size = new System.Drawing.Size(96, 15);
+            this.lblAnoNascimento.TabIndex = 2;
+            this.lblAnoNascimento.Text = "Ano Nascimento";
             // 
-            // textBox2
+            // btnCategoria
             // 
-            this.textBox2.Location = new System.Drawing.Point(114, 57);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(89, 23);
-            this.textBox2.TabIndex = 3;
+            this.btnCategoria.Location = new System.Drawing.Point(12, 109);
+            this.btnCategoria.Name = "btnCategoria";
+            this.btnCategoria.Size = new System.Drawing.Size(169, 25);
+            this.btnCategoria.TabIndex = 6;
+            this.btnCategoria.Text = "Identificar Categoria";
+            this.btnCategoria.UseVisualStyleBackColor = true;
+            this.btnCategoria.Click += new System.EventHandler(this.btnCategoria_Click);
             // 
-            // label3
+            // lblCategoria
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(223, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Ano Último Aniversario";
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(223, 114);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(58, 15);
+            this.lblCategoria.TabIndex = 7;
+            this.lblCategoria.Text = "Categoria";
             // 
-            // textBox3
+            // lblInserirCategoria
             // 
-            this.textBox3.Location = new System.Drawing.Point(359, 57);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(89, 23);
-            this.textBox3.TabIndex = 5;
+            this.lblInserirCategoria.BackColor = System.Drawing.Color.Yellow;
+            this.lblInserirCategoria.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblInserirCategoria.Location = new System.Drawing.Point(287, 109);
+            this.lblInserirCategoria.Name = "lblInserirCategoria";
+            this.lblInserirCategoria.Size = new System.Drawing.Size(161, 23);
+            this.lblInserirCategoria.TabIndex = 8;
+            this.lblInserirCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // dtAnoNascimento
             // 
-            this.button1.Location = new System.Drawing.Point(12, 109);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 25);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Identificar Categoria";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dtAnoNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtAnoNascimento.Location = new System.Drawing.Point(114, 57);
+            this.dtAnoNascimento.Name = "dtAnoNascimento";
+            this.dtAnoNascimento.Size = new System.Drawing.Size(99, 23);
+            this.dtAnoNascimento.TabIndex = 9;
             // 
-            // label4
+            // lblHoje
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(223, 114);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Categoria";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.Gold;
-            this.textBox4.Location = new System.Drawing.Point(287, 111);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(161, 23);
-            this.textBox4.TabIndex = 8;
+            this.lblHoje.AutoSize = true;
+            this.lblHoje.Location = new System.Drawing.Point(245, 60);
+            this.lblHoje.Name = "lblHoje";
+            this.lblHoje.Size = new System.Drawing.Size(44, 15);
+            this.lblHoje.TabIndex = 11;
+            this.lblHoje.Text = "Hoje é:";
             // 
             // frmMatriculaAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(469, 161);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblHoje);
+            this.Controls.Add(this.dtAnoNascimento);
+            this.Controls.Add(this.lblInserirCategoria);
+            this.Controls.Add(this.lblCategoria);
+            this.Controls.Add(this.btnCategoria);
+            this.Controls.Add(this.lblAnoNascimento);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.lblNome);
             this.Name = "frmMatriculaAluno";
             this.Text = "frmMatriculaAluno";
             this.ResumeLayout(false);
@@ -137,14 +131,13 @@
 
         #endregion
 
-        private Label label1;
-        private TextBox textBox1;
-        private Label label2;
-        private TextBox textBox2;
-        private Label label3;
-        private TextBox textBox3;
-        private Button button1;
-        private Label label4;
-        private TextBox textBox4;
+        private Label lblNome;
+        private TextBox txtNome;
+        private Label lblAnoNascimento;
+        private Button btnCategoria;
+        private Label lblCategoria;
+        private Label lblInserirCategoria;
+        private DateTimePicker dtAnoNascimento;
+        private Label lblHoje;
     }
 }

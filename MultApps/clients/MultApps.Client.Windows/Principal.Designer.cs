@@ -39,7 +39,7 @@
             this.btnAbrirFormPesoIdeal.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.btnAbrirFormPesoIdeal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrirFormPesoIdeal.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAbrirFormPesoIdeal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAbrirFormPesoIdeal.ForeColor = System.Drawing.Color.White;
             this.btnAbrirFormPesoIdeal.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirFormPesoIdeal.Image")));
             this.btnAbrirFormPesoIdeal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAbrirFormPesoIdeal.Location = new System.Drawing.Point(21, 23);
@@ -57,6 +57,7 @@
             this.btnAbrirFormMatriculaAluno.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.btnAbrirFormMatriculaAluno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrirFormMatriculaAluno.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAbrirFormMatriculaAluno.ForeColor = System.Drawing.Color.White;
             this.btnAbrirFormMatriculaAluno.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirFormMatriculaAluno.Image")));
             this.btnAbrirFormMatriculaAluno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAbrirFormMatriculaAluno.Location = new System.Drawing.Point(125, 23);
@@ -73,6 +74,7 @@
             this.btnAbrirFormReajusteSalarial.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.btnAbrirFormReajusteSalarial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrirFormReajusteSalarial.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAbrirFormReajusteSalarial.ForeColor = System.Drawing.Color.White;
             this.btnAbrirFormReajusteSalarial.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirFormReajusteSalarial.Image")));
             this.btnAbrirFormReajusteSalarial.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAbrirFormReajusteSalarial.Location = new System.Drawing.Point(229, 23);
