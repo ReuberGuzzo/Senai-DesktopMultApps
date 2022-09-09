@@ -12,34 +12,31 @@ namespace MultApps.Client.Windows.Funcionalidades
 {
     public partial class frmPesoIdeal : Form
     {
-        RadioButton rbnSelecionado = null;
-        public frmPesoIdeal()
+             public frmPesoIdeal()
         {
             InitializeComponent();
         }
 
         private void rdbMasculino_CheckedChanged(object sender, EventArgs e)
         {
-            RadioButton rbn = (RadioButton)sender;
-            if (rbn.Checked)
-            {
-                rbnSelecionado = rbn;
-                SetPesoIdeal();
-                 
-            }
-
+            
         }
         private void SetPesoIdeal()
         {
+            
             try
             {
                 double altura = Convert.ToDouble(txtAltura.Text);
                 double pesoIdeal;
+
+                var rbnSelecionado = grbSexo.Controls.OfType<RadioButton>().
+                SingleOrDefault(r => r.Checked == true);
+
                 if (rbnSelecionado.Text.Equals("Masculino"))
                     pesoIdeal = (72.7 * altura) - 58;
                 else
                     pesoIdeal = (62.1 * altura) - 44.7;
-                lblPesoIdeal.Text = pesoIdeal.ToString("N");
+                txtPesoIdeal.Text = pesoIdeal.ToString("N");
             }
             catch (Exception e)
             {
@@ -48,8 +45,12 @@ namespace MultApps.Client.Windows.Funcionalidades
             }
         }
 
-
+        private void txtAltura_TextChanged(object sender, EventArgs e)
+        {
+            SetPesoIdeal();
+        }
     }
-
-
 }
+
+
+
