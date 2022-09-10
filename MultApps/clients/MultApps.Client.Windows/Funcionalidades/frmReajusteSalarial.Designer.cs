@@ -161,7 +161,7 @@
             // 
             this.lbxResumo.BackColor = System.Drawing.Color.White;
             this.lbxResumo.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbxResumo.ForeColor = System.Drawing.SystemColors.Menu;
+            this.lbxResumo.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.lbxResumo.FormattingEnabled = true;
             this.lbxResumo.ItemHeight = 15;
             this.lbxResumo.Location = new System.Drawing.Point(28, 151);
