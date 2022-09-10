@@ -67,7 +67,7 @@ namespace MultApps.Client.Windows.Funcionalidades
             return valorGratificacao;
         }
 
-        private static double GetImposto(RadioButton rbnCategoria,double valorSalarioBruto)
+        private static double GetValorImposto(RadioButton rbnCategoria,double valorSalarioBruto)
         {
             double valorImposto = 0;
             switch (rbnCategoria.Text)
@@ -90,7 +90,7 @@ namespace MultApps.Client.Windows.Funcionalidades
             return valorImposto;
         }
 
-        private double GetAuxilioAlimentacao(RadioButton rbnCategoria, double valorSalarioBruto, double valorSalarioMinimo)
+        private double GetValorAuxilioAlimentacao(RadioButton rbnCategoria, double valorSalarioBruto, double valorSalarioMinimo)
         {
             double valorAuxilioAlimentacao = (valorSalarioBruto / 3) / 2;
             
